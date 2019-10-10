@@ -1,0 +1,87 @@
+<%= form_with(model: continent, local: true) do |form| %>
+  <% if continent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(continent.errors.count, "error") %> prohibited this continent from being saved:</h2>
+
+      <ul>
+      <% continent.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Continent %>
+    <%= form.text_field :Continent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Country %>
+    <%= form.text_field :Country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Population %>
+    <%= form.number_field :Population %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Population_density %>
+    <%= form.number_field :Population_density %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Urban_population %>
+    <%= form.number_field :Urban_population %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Urban_population_coastal %>
+    <%= form.number_field :Urban_population_coastal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :GDP_per_capita %>
+    <%= form.number_field :GDP_per_capita %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Land_area %>
+    <%= form.number_field :Land_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Cropland_area %>
+    <%= form.number_field :Cropland_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pasture_area %>
+    <%= form.number_field :Pasture_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Water_per_capita %>
+    <%= form.number_field :Water_per_capita %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Commercial_energy_consumption %>
+    <%= form.number_field :Commercial_energy_consumption %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Traditional_fuel_consumption %>
+    <%= form.number_field :Traditional_fuel_consumption %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Commercial_hydroelectric_consumption %>
+    <%= form.number_field :Commercial_hydroelectric_consumption %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

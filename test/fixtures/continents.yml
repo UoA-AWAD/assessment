@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Continent: MyString
+  Country: MyString
+  Population: 1
+  Population_density: 1
+  Urban_population: 1
+  Urban_population_coastal: 1
+  GDP_per_capita: 1
+  Land_area: 1
+  Cropland_area: 1
+  Pasture_area: 1
+  Water_per_capita: 1
+  Commercial_energy_consumption: 1
+  Traditional_fuel_consumption: 1
+  Commercial_hydroelectric_consumption: 1
+
+two:
+  Continent: MyString
+  Country: MyString
+  Population: 1
+  Population_density: 1
+  Urban_population: 1
+  Urban_population_coastal: 1
+  GDP_per_capita: 1
+  Land_area: 1
+  Cropland_area: 1
+  Pasture_area: 1
+  Water_per_capita: 1
+  Commercial_energy_consumption: 1
+  Traditional_fuel_consumption: 1
+  Commercial_hydroelectric_consumption: 1
