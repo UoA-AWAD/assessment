@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Worlddata</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Continent</th>
+      <th>Country</th>
+      <th>Population</th>
+      <th>Population density</th>
+      <th>Uban pop</th>
+      <th>Uban pop coastal</th>
+      <th>Gdp per capita</th>
+      <th>Land area</th>
+      <th>Cropland</th>
+      <th>Pasture</th>
+      <th>Water per capita</th>
+      <th>Commercial energy consumption</th>
+      <th>Traditional fuel consumption</th>
+      <th>Commercial hydroelec consumption</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @worlddata.each do |worlddatum| %>
+      <tr>
+        <td><%= worlddatum.Continent %></td>
+        <td><%= worlddatum.Country %></td>
+        <td><%= worlddatum.Population %></td>
+        <td><%= worlddatum.Population_Density %></td>
+        <td><%= worlddatum.Uban_pop %></td>
+        <td><%= worlddatum.Uban_pop_coastal %></td>
+        <td><%= worlddatum.GDP_per_capita %></td>
+        <td><%= worlddatum.Land_Area %></td>
+        <td><%= worlddatum.Cropland %></td>
+        <td><%= worlddatum.Pasture %></td>
+        <td><%= worlddatum.Water_per_capita %></td>
+        <td><%= worlddatum.Commercial_Energy_Consumption %></td>
+        <td><%= worlddatum.Traditional_Fuel_Consumption %></td>
+        <td><%= worlddatum.Commercial_Hydroelec_Consumption %></td>
+        <td><%= link_to 'Show', worlddatum %></td>
+        <td><%= link_to 'Edit', edit_worlddatum_path(worlddatum) %></td>
+        <td><%= link_to 'Destroy', worlddatum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Worlddatum', new_worlddatum_path %>

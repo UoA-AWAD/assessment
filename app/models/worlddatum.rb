@@ -1,0 +1,2 @@
+class Worlddatum < ApplicationRecord
+end
