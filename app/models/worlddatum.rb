@@ -1,2 +1,0 @@
-class Worlddatum < ApplicationRecord
-end
