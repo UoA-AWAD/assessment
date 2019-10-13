@@ -70,5 +70,9 @@
   <%= @continent.Commercial_hydroelectric_consumption %>
 </p>
 
+<p>
+  <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=3&size=400x300&markers=size:small%7Ccolor:red%7C=#{@continent.Country}&key=AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M", alt: "Map" %>
+</p>
+
 <%= link_to 'Edit', edit_continent_path(@continent) %> |
 <%= link_to 'Back', continents_path %>
