@@ -1,5 +1,6 @@
 class ContinentsController < ApplicationController
   before_action :set_continent, only: [:show, :edit, :update, :destroy]
+  rescue_from ActiveRecord::RecordNotFound, with: :redirect_if_not_found
 
   # GET /continents
   # GET /continents.json

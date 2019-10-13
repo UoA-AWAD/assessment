@@ -2404,3 +2404,208 @@ Processing by ContinentsController#index as HTML
 Completed 200 OK in 182ms (Views: 177.4ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/continents" for 127.0.0.1 at 2019-10-13 17:57:27 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ian/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (177.5ms)
+Completed 200 OK in 770ms (Views: 725.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/continents/new" for 127.0.0.1 at 2019-10-13 17:57:38 +0100
+Processing by ContinentsController#new as HTML
+  Rendering continents/new.html.erb within layouts/application
+  Rendered continents/_form.html.erb (28.4ms)
+  Rendered continents/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/continents" for 127.0.0.1 at 2019-10-13 17:58:01 +0100
+Processing by ContinentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnG7MU8cf35qdamnR32s7eTcHmDX87sA1DtBcViZRXdj+iVZEa0LsT5h8NzIImICMQ3nfBLP1+pbvBNZC5BUZQ==", "continent"=>{"Continent"=>"", "Country"=>"hello", "Population"=>"1", "Population_density"=>"1", "Urban_population"=>"-1", "Urban_population_coastal"=>"1", "GDP_per_capita"=>"1", "Land_area"=>"1", "Cropland_area"=>"1", "Pasture_area"=>"1", "Water_per_capita"=>"1", "Commercial_energy_consumption"=>"-1", "Traditional_fuel_consumption"=>"1", "Commercial_hydroelectric_consumption"=>"1"}, "commit"=>"Create Continent"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `continent' for #<Continent:0x00007f541a2efb60>
+Did you mean?  Continent
+               Continent?
+               Continent=):
+  
+app/controllers/continents_controller.rb:34:in `block in create'
+app/controllers/continents_controller.rb:33:in `create'
+Started POST "/continents" for 127.0.0.1 at 2019-10-13 17:58:34 +0100
+Processing by ContinentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnG7MU8cf35qdamnR32s7eTcHmDX87sA1DtBcViZRXdj+iVZEa0LsT5h8NzIImICMQ3nfBLP1+pbvBNZC5BUZQ==", "continent"=>{"Continent"=>"", "Country"=>"hello", "Population"=>"1", "Population_density"=>"1", "Urban_population"=>"-1", "Urban_population_coastal"=>"1", "GDP_per_capita"=>"1", "Land_area"=>"1", "Cropland_area"=>"1", "Pasture_area"=>"1", "Water_per_capita"=>"1", "Commercial_energy_consumption"=>"-1", "Traditional_fuel_consumption"=>"1", "Commercial_hydroelectric_consumption"=>"1"}, "commit"=>"Create Continent"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 4.7ms)
+
+
+  
+NoMethodError (undefined method `country' for #<Continent:0x00007f54190fb5d0>
+Did you mean?  Country
+               Country?
+               Country=):
+  
+app/controllers/continents_controller.rb:34:in `block in create'
+app/controllers/continents_controller.rb:33:in `create'
+Started POST "/continents" for 127.0.0.1 at 2019-10-13 17:58:44 +0100
+Processing by ContinentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnG7MU8cf35qdamnR32s7eTcHmDX87sA1DtBcViZRXdj+iVZEa0LsT5h8NzIImICMQ3nfBLP1+pbvBNZC5BUZQ==", "continent"=>{"Continent"=>"", "Country"=>"hello", "Population"=>"1", "Population_density"=>"1", "Urban_population"=>"-1", "Urban_population_coastal"=>"1", "GDP_per_capita"=>"1", "Land_area"=>"1", "Cropland_area"=>"1", "Pasture_area"=>"1", "Water_per_capita"=>"1", "Commercial_energy_consumption"=>"-1", "Traditional_fuel_consumption"=>"1", "Commercial_hydroelectric_consumption"=>"1"}, "commit"=>"Create Continent"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 2.6ms)
+
+
+  
+NoMethodError (undefined method `continent' for #<Continent:0x00007f541a8fc2b0>
+Did you mean?  Continent
+               Continent?
+               Continent=):
+  
+app/controllers/continents_controller.rb:34:in `block in create'
+app/controllers/continents_controller.rb:33:in `create'
+Started POST "/continents" for 127.0.0.1 at 2019-10-13 18:05:52 +0100
+Processing by ContinentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vnG7MU8cf35qdamnR32s7eTcHmDX87sA1DtBcViZRXdj+iVZEa0LsT5h8NzIImICMQ3nfBLP1+pbvBNZC5BUZQ==", "continent"=>{"Continent"=>"", "Country"=>"hello", "Population"=>"1", "Population_density"=>"1", "Urban_population"=>"-1", "Urban_population_coastal"=>"1", "GDP_per_capita"=>"1", "Land_area"=>"1", "Cropland_area"=>"1", "Pasture_area"=>"1", "Water_per_capita"=>"1", "Commercial_energy_consumption"=>"-1", "Traditional_fuel_consumption"=>"1", "Commercial_hydroelectric_consumption"=>"1"}, "commit"=>"Create Continent"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  Rendering continents/new.html.erb within layouts/application
+  Rendered continents/_form.html.erb (19.6ms)
+  Rendered continents/new.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 169ms (Views: 74.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/continents" for 127.0.0.1 at 2019-10-13 18:06:02 +0100
+Processing by ContinentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BszfeXEct4Kqbc12VfQhZrdKfNp1CyyoV7D7NtaYIPLJff1bAy9j7DXzC0VKrar3McrQ4/EEllDPSuRatSMYhg==", "continent"=>{"Continent"=>"", "Country"=>"", "Population"=>"1", "Population_density"=>"1", "Urban_population"=>"-1", "Urban_population_coastal"=>"1", "GDP_per_capita"=>"1", "Land_area"=>"1", "Cropland_area"=>"1", "Pasture_area"=>"1", "Water_per_capita"=>"1", "Commercial_energy_consumption"=>"-1", "Traditional_fuel_consumption"=>"1", "Commercial_hydroelectric_consumption"=>"1"}, "commit"=>"Create Continent"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  Rendering continents/new.html.erb within layouts/application
+  Rendered continents/_form.html.erb (21.7ms)
+  Rendered continents/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 93ms (Views: 80.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/continents" for 127.0.0.1 at 2019-10-13 18:06:11 +0100
+Processing by ContinentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9j49JS8urZdfdCszPFDwq2BQr/Z5uQhL/xJ33Iw6riM5jx8HXR15+cDq7QAjCXs65tADz/22srNn6Giw74GWVw==", "continent"=>{"Continent"=>"", "Country"=>"", "Population"=>"", "Population_density"=>"1", "Urban_population"=>"-1", "Urban_population_coastal"=>"1", "GDP_per_capita"=>"1", "Land_area"=>"1", "Cropland_area"=>"1", "Pasture_area"=>"1", "Water_per_capita"=>"1", "Commercial_energy_consumption"=>"-1", "Traditional_fuel_consumption"=>"1", "Commercial_hydroelectric_consumption"=>"1"}, "commit"=>"Create Continent"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/continents_controller.rb:34
+  Rendering continents/new.html.erb within layouts/application
+  Rendered continents/_form.html.erb (24.7ms)
+  Rendered continents/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 102ms (Views: 86.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/continents" for 127.0.0.1 at 2019-10-13 18:07:28 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (59.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (192.2ms)
+Completed 200 OK in 241ms (Views: 178.3ms | ActiveRecord: 59.2ms)
+
+
+Started GET "/continents/4" for 127.0.0.1 at 2019-10-13 18:07:30 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:71
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 64ms (Views: 46.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/continents/4" for 127.0.0.1 at 2019-10-13 18:14:14 +0100
+  
+SyntaxError (/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:3: syntax error, unexpected tLABEL, expecting '='
+...veRecord::RecordNotFound, with: :redirect_if_not_found
+...                          ^~~~~):
+  
+app/controllers/continents_controller.rb:3: syntax error, unexpected tLABEL, expecting '='
+Started GET "/continents/4" for 127.0.0.1 at 2019-10-13 18:16:10 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 97ms (Views: 43.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/continents/300" for 127.0.0.1 at 2019-10-13 18:16:16 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"300"}
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 300], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+Attempt to access non-existent ContinentsController300
+Redirected to http://localhost:3000/continents
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/continents" for 127.0.0.1 at 2019-10-13 18:16:16 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 182ms (Views: 175.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/continents/4000" for 127.0.0.1 at 2019-10-13 18:16:24 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"4000"}
+  [1m[36mContinent Load (0.3ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 4000], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+Attempt to access non-existent ContinentsController4000
+Redirected to http://localhost:3000/continents
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/continents" for 127.0.0.1 at 2019-10-13 18:16:24 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (138.6ms)
+Completed 200 OK in 180ms (Views: 174.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/continents/kjahdsf" for 127.0.0.1 at 2019-10-13 18:16:27 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"kjahdsf"}
+  [1m[36mContinent Load (0.4ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+Attempt to access non-existent ContinentsControllerkjahdsf
+Redirected to http://localhost:3000/continents
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/continents" for 127.0.0.1 at 2019-10-13 18:16:27 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (137.1ms)
+Completed 200 OK in 176ms (Views: 171.9ms | ActiveRecord: 2.6ms)
+
+
