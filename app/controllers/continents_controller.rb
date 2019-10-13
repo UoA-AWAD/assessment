@@ -4,7 +4,11 @@ class ContinentsController < ApplicationController
   # GET /continents
   # GET /continents.json
   def index
-    @continents = Continent.all
+    @continents = if params[:term]
+      Continent.where('country LIKE ?',"%#{params[:term]}%")
+    else
+      Continent.all
+    end
   end
 
   # GET /continents/1
@@ -69,6 +73,6 @@ class ContinentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def continent_params
-      params.require(:continent).permit(:Continent, :Country, :Population, :Population_density, :Urban_population, :Urban_population_coastal, :GDP_per_capita, :Land_area, :Cropland_area, :Pasture_area, :Water_per_capita, :Commercial_energy_consumption, :Traditional_fuel_consumption, :Commercial_hydroelectric_consumption)
+      params.require(:continent).permit(:Continent, :Country, :Population, :Population_density, :Urban_population, :Urban_population_coastal, :GDP_per_capita, :Land_area, :Cropland_area, :Pasture_area, :Water_per_capita, :Commercial_energy_consumption, :Traditional_fuel_consumption, :Commercial_hydroelectric_consumption, :term)
     end
 end
