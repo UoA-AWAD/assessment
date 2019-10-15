@@ -2,56 +2,36 @@
 
 <h1>Continents</h1>
 
-<%= form_tag(continents_path, method: :get) do %>
-  <%= text_field_tag :term, params[:term] %>
-  <%= submit_tag'Search' %>
-<% end %>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],'mapsApiKey': 'AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
 
-<table>
-  <thead>
-    <tr>
-      <th>Continent</th>
-      <th>Country</th>
-      <th>Population</th>
-      <th>Population density</th>
-      <th>Urban population</th>
-      <th>Urban population coastal</th>
-      <th>Gdp per capita</th>
-      <th>Land area</th>
-      <th>Cropland area</th>
-      <th>Pasture area</th>
-      <th>Water per capita</th>
-      <th>Commercial energy consumption</th>
-      <th>Traditional fuel consumption</th>
-      <th>Commercial hydroelectric consumption</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
 
-  <tbody>
-    <% @continents.each do |continent| %>
-      <tr>
-        <td><%= continent.Continent %></td>
-        <td><%= continent.Country %></td>
-        <td><%= continent.Population %></td>
-        <td><%= continent.Population_density %></td>
-        <td><%= continent.Urban_population %></td>
-        <td><%= continent.Urban_population_coastal %></td>
-        <td><%= continent.GDP_per_capita %></td>
-        <td><%= continent.Land_area %></td>
-        <td><%= continent.Cropland_area %></td>
-        <td><%= continent.Pasture_area %></td>
-        <td><%= continent.Water_per_capita %></td>
-        <td><%= continent.Commercial_energy_consumption %></td>
-        <td><%= continent.Traditional_fuel_consumption %></td>
-        <td><%= continent.Commercial_hydroelectric_consumption %></td>
-        <td><%= link_to 'Show', continent %></td>
-        <td><%= link_to 'Edit', edit_continent_path(continent) %></td>
-        <td><%= link_to 'Destroy', continent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+</body>
 
 <br>
 
