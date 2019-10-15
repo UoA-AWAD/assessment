@@ -2609,3 +2609,1582 @@ Processing by ContinentsController#index as HTML
 Completed 200 OK in 176ms (Views: 171.9ms | ActiveRecord: 2.6ms)
 
 
+Started GET "/" for ::1 at 2019-10-15 09:25:23 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jonas/gems/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 301ms (Views: 293.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=al&commit=Search" for ::1 at 2019-10-15 09:25:28 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"al", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%al%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (65.5ms)
+Completed 200 OK in 102ms (Views: 94.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=alf&commit=Search" for ::1 at 2019-10-15 09:25:35 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"alf", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.3ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%alf%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=brun&commit=Search" for ::1 at 2019-10-15 09:25:41 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"brun", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.1ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%brun%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 68ms (Views: 63.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=Asia&commit=Search" for ::1 at 2019-10-15 09:25:48 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"Asia", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.9ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%Asia%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 89ms (Views: 84.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=Eu&commit=Search" for ::1 at 2019-10-15 09:25:52 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"Eu", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.0ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%Eu%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 87ms (Views: 82.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=Eu&commit=Search" for ::1 at 2019-10-15 09:26:01 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"Eu", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%Eu%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=Euef&commit=Search" for ::1 at 2019-10-15 09:26:02 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"Euef", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%Euef%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 64ms (Views: 59.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=&commit=Search" for ::1 at 2019-10-15 09:26:11 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (6.3ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country LIKE '%%')[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (117.3ms)
+Completed 200 OK in 147ms (Views: 136.9ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 09:26:53 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (119.8ms)
+Completed 200 OK in 138ms (Views: 135.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/layouts" for ::1 at 2019-10-15 09:26:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/layouts"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/continents/new" for ::1 at 2019-10-15 09:27:34 +0100
+Processing by ContinentsController#new as HTML
+  Rendering continents/new.html.erb within layouts/application
+  Rendered continents/_form.html.erb (21.9ms)
+  Rendered continents/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 09:27:42 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/continents.json" for ::1 at 2019-10-15 09:28:40 +0100
+Processing by ContinentsController#index as JSON
+  Rendering continents/index.json.jbuilder
+  [1m[36mContinent Load (2.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.json.jbuilder:1
+  Rendered continents/_continent.json.jbuilder (3.8ms)
+  Rendered continents/_continent.json.jbuilder (1.1ms)
+  Rendered continents/_continent.json.jbuilder (1.5ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (0.9ms)
+  Rendered continents/_continent.json.jbuilder (0.8ms)
+  Rendered continents/_continent.json.jbuilder (2.3ms)
+  Rendered continents/_continent.json.jbuilder (2.5ms)
+  Rendered continents/_continent.json.jbuilder (1.3ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (1.5ms)
+  Rendered continents/_continent.json.jbuilder (1.3ms)
+  Rendered continents/_continent.json.jbuilder (0.9ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (1.4ms)
+  Rendered continents/_continent.json.jbuilder (2.0ms)
+  Rendered continents/_continent.json.jbuilder (1.6ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (1.5ms)
+  Rendered continents/_continent.json.jbuilder (1.5ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.8ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (0.8ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.6ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (1.3ms)
+  Rendered continents/_continent.json.jbuilder (0.8ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.6ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.1ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.1ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.1ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (1.1ms)
+  Rendered continents/_continent.json.jbuilder (0.9ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.6ms)
+  Rendered continents/_continent.json.jbuilder (0.9ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.6ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (1.0ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/_continent.json.jbuilder (1.2ms)
+  Rendered continents/_continent.json.jbuilder (0.7ms)
+  Rendered continents/index.json.jbuilder (211.2ms)
+Completed 200 OK in 224ms (Views: 217.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 09:29:15 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.9ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (103.3ms)
+Completed 200 OK in 130ms (Views: 126.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/continents.json" for 127.0.0.1 at 2019-10-15 09:29:42 +0100
+Processing by ContinentsController#index as JSON
+  Rendering continents/index.json.jbuilder
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.json.jbuilder:1
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.5ms)
+  Rendered continents/_continent.json.jbuilder (0.4ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.3ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/_continent.json.jbuilder (0.2ms)
+  Rendered continents/index.json.jbuilder (98.5ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/Algeria" for ::1 at 2019-10-15 09:51:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/Algeria"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/continents/1" for ::1 at 2019-10-15 09:51:38 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContinent Load (1.2ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 79ms (Views: 43.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 09:52:22 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (5.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 85ms (Views: 77.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/continents/5" for ::1 at 2019-10-15 09:52:24 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mContinent Load (0.1ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 09:52:26 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.3ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 77ms (Views: 71.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/continents/59" for ::1 at 2019-10-15 09:52:39 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"59"}
+  [1m[36mContinent Load (0.4ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 59], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/continents/75" for ::1 at 2019-10-15 09:54:33 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mContinent Load (0.4ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 64ms (Views: 59.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:15:54 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jonas/gems/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.0ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (131.8ms)
+Completed 200 OK in 475ms (Views: 455.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/indes" for ::1 at 2019-10-15 10:15:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/indes"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/index" for ::1 at 2019-10-15 10:16:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/root" for ::1 at 2019-10-15 10:16:14 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/root"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/application" for ::1 at 2019-10-15 10:16:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/application"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/layouts" for ::1 at 2019-10-15 10:16:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/layouts"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome" for ::1 at 2019-10-15 10:18:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home" for ::1 at 2019-10-15 10:18:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/index" for ::1 at 2019-10-15 10:18:52 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-15 10:19:55 +0100
+  
+ActionController::RoutingError (uninitialized constant Home):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-15 10:20:10 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jonas/gems/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant Home):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/continents" for ::1 at 2019-10-15 10:20:14 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 311ms (Views: 304.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:20:18 +0100
+  
+ActionController::RoutingError (uninitialized constant Home):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-15 10:21:47 +0100
+  
+ActionController::RoutingError (uninitialized constant Home):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome/index" for ::1 at 2019-10-15 10:22:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home/index" for ::1 at 2019-10-15 10:22:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 72ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:22:47 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:23:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:28:11 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:33:21 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 500 Internal Server Error in 116ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.jpg" is not present in the asset pipeline.):
+    1: <%= image_tag("logo.jpg",  :alt =>"World energy analysis") %>
+    2: <p>Global Data </p>
+  
+app/views/layouts/_menu.html.erb:1:in `_app_views_layouts__menu_html_erb__369019491078899108_69885199389400'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___3555470874395908119_69885195656200'
+Started GET "/" for ::1 at 2019-10-15 10:33:45 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jonas/gems/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_menu.html.erb (1.4ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.jpg" is not present in the asset pipeline.):
+    1: <%= image_tag("logo.jpg",  :alt =>"World energy analysis") %>
+    2: <p>Global Data </p>
+  
+app/views/layouts/_menu.html.erb:1:in `_app_views_layouts__menu_html_erb__4220040248116401063_70143979478940'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2577816031290568402_70143963673500'
+Started GET "/" for ::1 at 2019-10-15 10:34:40 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_menu.html.erb (3.4ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "lib/assets/logo.jpg" is not present in the asset pipeline.):
+    1: <%= image_tag("lib/assets/logo.jpg",  :alt =>"World energy analysis") %>
+    2: <p>Global Data </p>
+  
+app/views/layouts/_menu.html.erb:1:in `_app_views_layouts__menu_html_erb__4220040248116401063_70144030840680'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2577816031290568402_70144030210580'
+Started GET "/" for ::1 at 2019-10-15 10:35:19 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (4.5ms)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "app/assets/logo.jpg" is not present in the asset pipeline.):
+    1: <%= image_tag("app/assets/logo.jpg",  :alt =>"World energy analysis") %>
+    2: <p>Global Data </p>
+  
+app/views/layouts/_menu.html.erb:1:in `_app_views_layouts__menu_html_erb__4220040248116401063_70143982151180'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2577816031290568402_70143981422780'
+Started GET "/" for ::1 at 2019-10-15 10:35:28 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.jpg" is not present in the asset pipeline.):
+    1: <%= image_tag("logo.jpg",  :alt =>"World energy analysis") %>
+    2: <p>Global Data </p>
+  
+app/views/layouts/_menu.html.erb:1:in `_app_views_layouts__menu_html_erb__4220040248116401063_70143979312460'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2577816031290568402_70143972586600'
+Started GET "/" for ::1 at 2019-10-15 10:36:26 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (49.0ms)
+Completed 200 OK in 184ms (Views: 180.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:38:00 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (1.2ms)
+Completed 200 OK in 118ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:38:08 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.9ms)
+Completed 200 OK in 84ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:39:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_menu.html.erb (4.0ms)
+Completed 200 OK in 86ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:39:42 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:40:56 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (1.4ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:40:57 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (4.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (86.7ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 112ms (Views: 94.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:41:08 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.5ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (128.0ms)
+  Rendered layouts/_menu.html.erb (1.7ms)
+Completed 200 OK in 194ms (Views: 188.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:41:09 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (6.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (105.3ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 125ms (Views: 115.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:43:01 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (6.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (115.6ms)
+  Rendered layouts/_menu.html.erb (1.0ms)
+Completed 200 OK in 154ms (Views: 144.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:43:20 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (133.6ms)
+  Rendered layouts/_menu.html.erb (4.3ms)
+Completed 200 OK in 189ms (Views: 182.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:43:38 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (5.4ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (123.0ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 147ms (Views: 137.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:43:44 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.0ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (37.1ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:44:30 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (7.7ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (118.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 7.7ms)
+
+
+  
+SyntaxError (/home/jonas/uoa/webapp/AWAD-Group-Assignment/app/views/layouts/_menu.html.erb:1: syntax error, unexpected tSTRING_BEG, expecting ')'
+...eight: 120px; width: 140px;") "/");@output_buffer.safe_appen...
+...                              ^):
+  
+app/views/layouts/_menu.html.erb:1: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2577816031290568402_70143982654520'
+Started GET "/continents" for ::1 at 2019-10-15 10:44:46 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (7.3ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (110.7ms)
+  Rendered layouts/_menu.html.erb (0.9ms)
+Completed 200 OK in 151ms (Views: 140.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:44:47 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_menu.html.erb (2.1ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:44:49 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.8ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (115.2ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 129.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:44:49 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (4.0ms)
+Completed 200 OK in 84ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:44:51 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (3.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (128.0ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 156ms (Views: 149.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:44:52 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (2.3ms)
+Completed 200 OK in 92ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:44:55 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (2.8ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (111.4ms)
+  Rendered layouts/_menu.html.erb (1.0ms)
+Completed 200 OK in 131ms (Views: 125.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:44:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (3.8ms)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:44:58 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (3.3ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (142.9ms)
+  Rendered layouts/_menu.html.erb (1.2ms)
+Completed 200 OK in 167ms (Views: 157.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/continents/1" for ::1 at 2019-10-15 10:45:00 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (2.3ms)
+Completed 200 OK in 68ms (Views: 31.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:45:02 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (4.2ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (126.4ms)
+  Rendered layouts/_menu.html.erb (0.8ms)
+Completed 200 OK in 146ms (Views: 139.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:45:03 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (3.4ms)
+Completed 200 OK in 100ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/continents" for ::1 at 2019-10-15 10:46:45 +0100
+Processing by ContinentsController#index as HTML
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (6.0ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/views/continents/index.html.erb:32
+  Rendered continents/index.html.erb within layouts/application (70.7ms)
+  Rendered layouts/_menu.html.erb (2.1ms)
+Completed 200 OK in 94ms (Views: 84.1ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/continents/1" for ::1 at 2019-10-15 10:46:48 +0100
+Processing by ContinentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT  "continents".* FROM "continents" WHERE "continents"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/continents_controller.rb:72
+  Rendering continents/show.html.erb within layouts/application
+  Rendered continents/show.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_menu.html.erb (3.4ms)
+Completed 200 OK in 92ms (Views: 82.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-15 10:46:51 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (1.8ms)
+Completed 200 OK in 118ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
