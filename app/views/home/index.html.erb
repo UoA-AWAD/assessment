@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Continents</h1>
+
 
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -9,17 +9,9 @@
         'packages':['geochart'],'mapsApiKey': 'AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M'
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
-
+      var countrydata = JSON.parse('<%= @countrydata %>'.replace(/&quot;/g,'"'));
       function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-          ['Country', 'Population'],
-          ['Germany', 1000],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['RU', 700]
-        ]);
+        var data = google.visualization.arrayToDataTable(countrydata);
 
         var options = {
           //region: '150'
@@ -33,5 +25,4 @@
 </head>
 <body>
     <div id="regions_div" style="width: 900px; height: 500px;"></div>
-    <% debug(@country) %>
 </body>

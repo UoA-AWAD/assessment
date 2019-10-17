@@ -8,10 +8,9 @@ class HomeController < ApplicationController
     uri = URI(url)
     response = Net::HTTP.get(uri)
     jsondata = JSON.parse(response)
-    countrydata = Array({"Country" => "Population"})
+    @countrydata = Array({"Country" => "Population"})
     for i in 0..(jsondata.length-1) do
-      countrydata.push([jsondata[i]["Country"], jsondata[i]["Population"]])
+      @countrydata.push([jsondata[i]["Country"], jsondata[i]["Population"]*1000])
     end
-    puts countrydata
   end
 end
