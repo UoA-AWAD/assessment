@@ -3,31 +3,5 @@
     <h1>World Energy Analysis</h1>
 </div>
 <br>
-<%=link_to 'Global Data', continents_path %> | Africa | Australasia | Europe | Latin America | Middle East and Arid Asia | Small Island States | Temperate Asia | Tropical Asia </p>
-<div>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {
-        'packages':['geochart'],'mapsApiKey': 'AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M'
-      });
-      google.charts.setOnLoadCallback(drawRegionsMap);
+| <%=link_to 'Global Data', continents_path %> | <%=link_to 'World Map', home_index_path%> | Africa | North America | Europe | Latin America | Middle East | Australasia |  </p>
 
-      function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['RU', 700]
-        ]);
-
-        var options = {};
-
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-
-        chart.draw(data, options);
-      }
-    </script>
-</div>
