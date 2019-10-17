@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :countries
   get 'home/index'
   resources :continents
   root 'home#index'

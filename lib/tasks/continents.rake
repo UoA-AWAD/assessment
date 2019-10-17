@@ -11,7 +11,6 @@ namespace :continents do
 
       #create new model instances with the data
       Continent.create!(
-      Continent: row[0],
       Country: row[1],
       Population: row[2].to_i,
       Population_density: row[3].to_i,
