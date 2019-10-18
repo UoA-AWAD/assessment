@@ -1,4 +1,10 @@
- <%=link_to 'World Map', home_index_path%>
+<%=link_to 'World Map', home_index_path%>
+
+<%= form_tag(continents_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
 <table>
   <thead>
     <tr>
