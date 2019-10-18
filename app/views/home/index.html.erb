@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
+<%=link_to "Global Data", continents_path %> | <%=link_to "World Map", "javascript:drawRegionsMap()"%> | <%=link_to "Africa", "javascript:drawRegionsMap('002')"%> | 
+<%=link_to "Asia", "javascript:drawRegionsMap('142')"%> | <%=link_to "Australia", "javascript:drawRegionsMap('009')"%> | <%=link_to "Europe", "javascript:drawRegionsMap('150')"%> | 
+<%=link_to "North America", "javascript:drawRegionsMap('021')"%> | <%=link_to "South America", "javascript:drawRegionsMap('005')"%>
 
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -8,13 +11,16 @@
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
       var countrydata = JSON.parse('<%= @countrydata %>'.replace(/&quot;/g,'"'));
-      function drawRegionsMap() {
+
+      function drawRegionsMap(regionID) {
         var data = google.visualization.arrayToDataTable(countrydata);
-
-        var options = {
-          //region: '150'
-        };
-
+        var options = {};
+        if (typeof(regionID) !== 'undefined') {
+          var options = {
+            region: regionID
+          };
+        }
+        
         var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
         chart.draw(data, options);
