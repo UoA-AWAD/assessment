@@ -4,6 +4,15 @@
 <%=link_to "North America", "javascript:drawRegionsMap('021')"%> | <%=link_to "South America", "javascript:drawRegionsMap('005')"%>
 
 <head>
+    <!-- We use this javascript to reload the page once, as only then the data gets fetched properly.
+    If we would have had more time a more robust fix would be implemented. -->
+    <script type="text/javascript">
+      if(window.location.href.substr(-2) !== "?r") {
+        window.location = window.location.href + "?r";
+      }
+    </script>
+
+    
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {
