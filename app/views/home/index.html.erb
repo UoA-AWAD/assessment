@@ -19,9 +19,34 @@
         'packages':['geochart'],'mapsApiKey': 'AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M'
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
-      var countrydata = JSON.parse('<%= @countrydata %>'.replace(/&quot;/g,'"'));
+      var jsondata = JSON.parse('<%= @response %>'.replace(/&quot;/g,'"'));
 
       function drawRegionsMap(regionID) {
+        var metric = "Population"
+        if (document.getElementById("pop_density").checked){
+          metric = "Population_density";
+        } else if (document.getElementById("urban_pop").checked){
+          metric = "Urban_population";
+        } else if (document.getElementById("urban_pop_coastal").checked){
+          metric = "Urban_population_coastal";
+        } else if (document.getElementById("land_area").checked){
+          metric = "Land_area";
+        } else if (document.getElementById("cropland_area").checked){
+          metric = "Cropland_area";
+        } else if (document.getElementById("pasture_area").checked){
+          metric = "Pasture_area";
+        } else if (document.getElementById("commercial_energy").checked){
+          metric = "Commercial_energy_consumption";
+        } else if (document.getElementById("traditional_fuel").checked){
+          metric = "Traditional_fuel_consumption";
+        } else if (document.getElementById("hydroelectric").checked){
+          metric = "Commercial_hydroelectric_consumption";
+        } 
+        var countrydata = [["Country", metric]];
+        for (let i = 0; i < jsondata.length; i++) {
+          countrydata.push([jsondata[i]["Country"], jsondata[i][metric]]);
+        }
+        console.log(countrydata[0])
         var data = google.visualization.arrayToDataTable(countrydata);
         var options = {};
         if (typeof(regionID) !== 'undefined') {
@@ -38,4 +63,23 @@
 </head>
 <body>
     <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <form action="">
+      <b> Population >>> </b>
+      <input type="radio" name="metric" id="population" checked="checked"> Total Population (1000s) - 1995
+      <input type="radio" name="metric" id="pop_density"> Population Density (Persons/km<sup>2</sup>) - 1995
+      <input type="radio" name="metric" id="urban_pop">  Total Urban Population (1000s) - 1995
+      <input type="radio" name="metric" id="urban_pop_coastal">  Total Urban Population in Coastal Cities (1000s) - 1980 <br>
+      <b> Land >>> </b>
+      <input type="radio" name="metric" id="land_area"> Land Area (10km<sup>2</sup>) - 1993
+      <input type="radio" name="metric" id="cropland_area"> Cropland Area (10km<sup>2</sup>) - 1993
+      <input type="radio" name="metric" id="pasture_area"> Pasture Area (km<sup>2</sup>) - 1993 <br>
+      <b> Energy >>> </b>
+      <input type="radio" name="metric" id="commercial_energy"> Total Commercial Energy Consumption (PJ) - 1993
+      <input type="radio" name="metric" id="traditional_fuel"> Traditional Fuel Consumption (TJ) - 1991
+      <input type="radio" name="metric" id="hydroelectric"> Commercial Hydroelectric Consumption (PJ) - 1993
+
+
+      <br> 
+      <%=link_to "Apply", "javascript:drawRegionsMap()"%>
+    </form>
 </body>
