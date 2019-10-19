@@ -15,6 +15,11 @@ class ContinentsController < ApplicationController
   # GET /continents/1
   # GET /continents/1.json
   def show
+    #puts '@@@@@@@@@@@@@@@@@@@@@'
+    #puts 'http://localhost:3000/continents/' + (@continent.id).to_s + '.json'
+    #url = 'http://localhost:3000/continents/' + (@continent.id).to_s + '.json'
+    #uri = URI(url)
+    #@response = Net::HTTP.get(uri)
   end
 
   # GET /continents/new
