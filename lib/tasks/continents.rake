@@ -32,13 +32,13 @@ namespace :continents do
     CSV.foreach("lib/assets/CAIT Country CO2 Emissions.csv", :headers =>false) do |row|
       puts row.inspect #just so that we know the file's being read
 
-      country_temp = row[0].to_s
-      continent = Continent.where(["continents.Country = ?", country_temp])
-      continent = continent[0]
+      @country_temp = row[0].to_s
+      @continent = Continent.where(["Country = ?", country_temp])
+      @continent = continent[0]
 
       #create new model instances with the data
       Emission.create!(
-      continent_id: continent.id,
+      continent_id: @continent.id,
       year: row[1].to_i,
       pollution: row[2].to_f,
       )
