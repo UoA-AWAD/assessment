@@ -12,7 +12,11 @@ Use climate data found in the Socio-Economic_Baseline_Data.csv file to show a Ge
 - Jonas van der Ham, 51986195
 
 # Issues
-Everything should be running correctly as we intended
+Search bar not working on Heroku. I think this is due to the line
+
+Continent.where('Country LIKE ?',"%#{params[:term]}%")
+
+in the continents controller. I don't think LIKE works with postgreSQL in the same way.
 
 # Running the application
 Run bundle install If the sqlite3 database isn't already present, then seed the database using:
