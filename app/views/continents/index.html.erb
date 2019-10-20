@@ -6,7 +6,7 @@ Click the link below to go to an interactive world map which allows for more int
 <%=link_to 'World Map', home_index_path%> 
 <br><br>
 <%= form_tag(continents_path, method: :get) do %>
-  <%= text_field_tag :term, params[:term] %>
+  <%= text_field_tag :term, @continents %>
   <%= submit_tag 'Search' %>
 <% end %>
 

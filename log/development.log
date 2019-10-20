@@ -15641,3 +15641,257 @@ Processing by ContinentsController#index as HTML
 Completed 200 OK in 677ms (Views: 664.7ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/continents?utf8=%E2%9C%93&term=&commit=Search" for 127.0.0.1 at 2019-10-20 22:09:57 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ian/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"", "commit"=>"Search"}
+  [1m[36mContinent Load (2.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/controllers/continents_controller.rb:9
+  Rendering continents/index.html.erb within layouts/application
+  Rendered continents/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_menu.html.erb (2.6ms)
+Completed 200 OK in 718ms (Views: 632.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=united&commit=Search" for 127.0.0.1 at 2019-10-20 22:10:08 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"united", "commit"=>"Search"}
+  [1m[36mContinent Load (2.3ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/controllers/continents_controller.rb:9
+  Rendering continents/index.html.erb within layouts/application
+  Rendered continents/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_menu.html.erb (2.8ms)
+Completed 200 OK in 98ms (Views: 81.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=United&commit=Search" for 127.0.0.1 at 2019-10-20 22:10:21 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"United", "commit"=>"Search"}
+  [1m[36mContinent Load (2.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents"[0m
+  ↳ app/controllers/continents_controller.rb:9
+  Rendering continents/index.html.erb within layouts/application
+  Rendered continents/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_menu.html.erb (2.8ms)
+Completed 200 OK in 104ms (Views: 85.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=United&commit=Search" for 127.0.0.1 at 2019-10-20 22:22:16 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ian/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"United", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.4ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country ILIKE '%United%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "ILIKE": syntax error: SELECT "continents".* FROM "continents" WHERE (country ILIKE '%United%')):
+    32:   </thead>
+    33: 
+    34:   <tbody>
+    35:     <% @continents.each do |continent| %>
+    36:       <tr>
+    37:         <td><%= continent.Continent %></td>
+    38:         <td><%= continent.Country %></td>
+  
+app/views/continents/index.html.erb:35:in `_app_views_continents_index_html_erb__2226769589684092564_70265535045300'
+Started GET "/continents?utf8=%E2%9C%93&term=United&commit=Search" for 127.0.0.1 at 2019-10-20 22:25:49 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"United", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.9ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (country::text LIKE '%United%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: unrecognized token: ":": SELECT "continents".* FROM "continents" WHERE (country::text LIKE '%United%')):
+    32:   </thead>
+    33: 
+    34:   <tbody>
+    35:     <% @continents.each do |continent| %>
+    36:       <tr>
+    37:         <td><%= continent.Continent %></td>
+    38:         <td><%= continent.Country %></td>
+  
+app/views/continents/index.html.erb:35:in `_app_views_continents_index_html_erb__2226769589684092564_70265535725880'
+Started GET "/continents?utf8=%E2%9C%93&term=United&commit=Search" for 127.0.0.1 at 2019-10-20 22:26:07 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"United", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.1ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country:text LIKE '%United%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near ":text": syntax error: SELECT "continents".* FROM "continents" WHERE (Country:text LIKE '%United%')):
+    32:   </thead>
+    33: 
+    34:   <tbody>
+    35:     <% @continents.each do |continent| %>
+    36:       <tr>
+    37:         <td><%= continent.Continent %></td>
+    38:         <td><%= continent.Country %></td>
+  
+app/views/continents/index.html.erb:35:in `_app_views_continents_index_html_erb__2226769589684092564_70265536711520'
+Started GET "/continents?utf8=%E2%9C%93&term=United&commit=Search" for 127.0.0.1 at 2019-10-20 22:27:46 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"United", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%United%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (55.8ms)
+  Rendered layouts/_menu.html.erb (2.6ms)
+Completed 200 OK in 669ms (Views: 656.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=United&commit=Search" for 127.0.0.1 at 2019-10-20 22:27:54 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"United", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%United%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (3.2ms)
+Completed 200 OK in 87ms (Views: 83.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=europe&commit=Search" for 127.0.0.1 at 2019-10-20 22:28:00 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"europe", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%europe%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_menu.html.erb (4.0ms)
+Completed 200 OK in 87ms (Views: 83.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:28:04 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"afg", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%afg%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_menu.html.erb (3.9ms)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:28:42 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"afg", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (1.1ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country::text LIKE '%afg%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: unrecognized token: ":": SELECT "continents".* FROM "continents" WHERE (Country::text LIKE '%afg%')):
+    32:   </thead>
+    33: 
+    34:   <tbody>
+    35:     <% @continents.each do |continent| %>
+    36:       <tr>
+    37:         <td><%= continent.Continent %></td>
+    38:         <td><%= continent.Country %></td>
+  
+app/views/continents/index.html.erb:35:in `_app_views_continents_index_html_erb__2226769589684092564_70265538143500'
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:28:50 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"afg", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%afg%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_menu.html.erb (2.7ms)
+Completed 200 OK in 167ms (Views: 155.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:30:20 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"afg", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.8ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE "continents"."Country" = ?[0m  [["Country", "%afg%"]]
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_menu.html.erb (2.5ms)
+Completed 200 OK in 92ms (Views: 78.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:30:33 +0100
+  
+SyntaxError (/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:15: syntax error, unexpected tCONSTANT, expecting ')'
+  # GET /continents/1
+    ^~~
+/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:86: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/continents_controller.rb:15: syntax error, unexpected tCONSTANT, expecting ')'
+app/controllers/continents_controller.rb:86: syntax error, unexpected end-of-input, expecting end
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:30:47 +0100
+  
+SyntaxError (/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:9: syntax error, unexpected '}', expecting =>
+....where(Country: {params[:term]})
+...                              ^):
+  
+app/controllers/continents_controller.rb:9: syntax error, unexpected '}', expecting =>
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:31:35 +0100
+  
+SyntaxError (/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:9: syntax error, unexpected '}', expecting =>
+....where(Country: {params[:term]})
+...                              ^):
+  
+app/controllers/continents_controller.rb:9: syntax error, unexpected '}', expecting =>
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:33:16 +0100
+  
+SyntaxError (/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:9: syntax error, unexpected '|', expecting ')'
+      Continent.where(|x| x[:Country] == params[:ter...
+                      ^
+/home/ian/Documents/RailsApps/AWAD-Group-Assignment/app/controllers/continents_controller.rb:9: syntax error, unexpected ')', expecting end
+...| x[:Country] == params[:term])
+...                              ^):
+  
+app/controllers/continents_controller.rb:9: syntax error, unexpected '|', expecting ')'
+app/controllers/continents_controller.rb:9: syntax error, unexpected ')', expecting end
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:34:43 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"afg", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%afg%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_menu.html.erb (2.4ms)
+Completed 200 OK in 130ms (Views: 118.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=afg&commit=Search" for 127.0.0.1 at 2019-10-20 22:38:39 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"afg", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.5ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%afg%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_menu.html.erb (3.1ms)
+Completed 200 OK in 117ms (Views: 114.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/continents?utf8=%E2%9C%93&term=africa&commit=Search" for 127.0.0.1 at 2019-10-20 22:38:51 +0100
+Processing by ContinentsController#index as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"africa", "commit"=>"Search"}
+  Rendering continents/index.html.erb within layouts/application
+  [1m[36mContinent Load (0.6ms)[0m  [1m[34mSELECT "continents".* FROM "continents" WHERE (Country LIKE '%africa%')[0m
+  ↳ app/views/continents/index.html.erb:35
+  Rendered continents/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_menu.html.erb (3.2ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.6ms)
+
+
