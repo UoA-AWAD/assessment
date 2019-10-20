@@ -6,7 +6,7 @@ class ContinentsController < ApplicationController
   # GET /continents.json
   def index
     @continents = if params[:term]
-      Continent.where('country LIKE ?',"%#{params[:term]}%")
+      Continent.where('Country LIKE ?',"%#{params[:term]}%")
     else
       Continent.all
     end
