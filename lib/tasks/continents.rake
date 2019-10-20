@@ -34,7 +34,7 @@ namespace :continents do
 
       @country_temp = row[0].to_s
       @continent = Continent.where(["Country = ?", @country_temp])
-      @continent = continent[0]
+      @continent = @continent[0]
 
       #create new model instances with the data
       Emission.create!(
