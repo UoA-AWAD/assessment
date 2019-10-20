@@ -46,7 +46,6 @@
         for (let i = 0; i < jsondata.length; i++) {
           countrydata.push([jsondata[i]["Country"], jsondata[i][metric]]);
         }
-        console.log(countrydata[0])
         var data = google.visualization.arrayToDataTable(countrydata);
         var options = {};
         if (typeof(regionID) !== 'undefined') {
@@ -62,6 +61,8 @@
     </script>
 </head>
 <body>
+    <p> This interactive map allows you to choose different metrics and explore interesting global data.
+        Use the radio buttons below the map and press apply to see different metrics.</p>
     <div id="regions_div" style="width: 900px; height: 500px;"></div>
     <form action="">
       <b> Population >>> </b>
