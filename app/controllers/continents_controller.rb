@@ -20,6 +20,13 @@ class ContinentsController < ApplicationController
     #url = 'http://localhost:3000/continents/' + (@continent.id).to_s + '.json'
     #uri = URI(url)
     #@response = Net::HTTP.get(uri)
+    @pollution_array = []
+    @year_array = []
+    @emission = Emission.where("continent_id = ?", @continent.id)
+    @emission.each do |emission|
+      @pollution_array<<emission.pollution
+      @year_array<<emission.year
+    end
   end
 
   # GET /continents/new

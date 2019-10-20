@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  continent: one
+  year: 1
+  pollution: 1.5
+
+two:
+  continent: two
+  year: 1
+  pollution: 1.5

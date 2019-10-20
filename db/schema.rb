@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_10_17_111723) do
+=======
+ActiveRecord::Schema.define(version: 2019_10_19_235538) do
+>>>>>>> ciaLinkTable
 
   create_table "continents", force: :cascade do |t|
     t.string "Continent"
@@ -31,11 +35,21 @@ ActiveRecord::Schema.define(version: 2019_10_17_111723) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "countries", force: :cascade do |t|
     t.string "continent"
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+  create_table "emissions", force: :cascade do |t|
+    t.integer "continent_id"
+    t.integer "year"
+    t.float "pollution"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["continent_id"], name: "index_emissions_on_continent_id"
+>>>>>>> ciaLinkTable
   end
 
 end
