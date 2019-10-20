@@ -33,9 +33,8 @@ namespace :continents do
       puts row.inspect #just so that we know the file's being read
 
       country_temp = row[0].to_s
-      continent = Continent.where(["Country = ?", country_temp])
+      continent = Continent.where(["continents.Country = ?", country_temp])
       continent = continent[0]
-      puts continent
 
       #create new model instances with the data
       Emission.create!(
