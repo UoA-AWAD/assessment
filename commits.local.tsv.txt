@@ -1,10 +1,56 @@
+f7600a3	TiniestHijack	Sun Oct 20 22:42:43 2019	final final
+33501d8	TiniestHijack	Sun Oct 20 22:40:58 2019	final
+e8c2e3f	TiniestHijack	Sun Oct 20 22:39:33 2019	search
+294b80c	TiniestHijack	Sun Oct 20 22:06:04 2019	search
+92b8cf3	TiniestHijack	Sun Oct 20 21:59:03 2019	highcharts
+b5c5276	TiniestHijack	Sun Oct 20 21:54:12 2019	highcharts
+5289173	TiniestHijack	Sun Oct 20 21:51:02 2019	highcharts
+64bd3da	TiniestHijack	Sun Oct 20 21:44:21 2019	highcharts
+a2d488c	TiniestHijack	Sun Oct 20 21:37:47 2019	highcharts
+412b5f2	TiniestHijack	Sun Oct 20 21:30:46 2019	highcharts
+fb244c6	TiniestHijack	Sun Oct 20 21:17:44 2019	highcharts
+a76dd9a	TiniestHijack	Sun Oct 20 20:49:42 2019	highcharts
+3142526	TiniestHijack	Sun Oct 20 19:28:52 2019	source
+57d3c7d	TiniestHijack	Sun Oct 20 19:21:25 2019	precompile
+5847f34	TiniestHijack	Sun Oct 20 19:08:39 2019	Merge branch 'master' of github.com:TiniestHijack/AWAD-Group-Assignment
+008a497	TiniestHijack	Sun Oct 20 19:08:34 2019	commit
+4a20ef9	Jonasvdham	Sun Oct 20 19:08:04 2019	bugfix
+ea2b9c2	TiniestHijack	Sun Oct 20 19:00:35 2019	Merge branch 'master' of github.com:TiniestHijack/AWAD-Group-Assignment
+5a7c520	TiniestHijack	Sun Oct 20 19:00:21 2019	precompile
+5799ee2	Jonasvdham	Sun Oct 20 18:55:33 2019	Update README.md
+b88d200	Jonasvdham	Sun Oct 20 18:44:09 2019	Update README.md
+96cdfd5	TiniestHijack	Sun Oct 20 18:23:36 2019	commit
+b0065a8	TiniestHijack	Sun Oct 20 18:14:23 2019	commit
+d4bff5b	TiniestHijack	Sun Oct 20 18:01:40 2019	commit
+a65205f	TiniestHijack	Sun Oct 20 17:59:26 2019	commit
+38f06e1	TiniestHijack	Sun Oct 20 17:56:13 2019	commit
+2285d91	TiniestHijack	Sun Oct 20 17:54:18 2019	commit
+36de736	TiniestHijack	Sun Oct 20 17:52:04 2019	commit
+334d15a	TiniestHijack	Sun Oct 20 17:48:16 2019	commit
+8af6f7b	TiniestHijack	Sun Oct 20 17:35:55 2019	commit
+d009681	TiniestHijack	Sun Oct 20 17:34:32 2019	last commit
+f22c12f	Jonasvdham	Sun Oct 20 17:29:14 2019	remove devlog
+ed6e2a3	Jonasvdham	Sun Oct 20 17:27:47 2019	changed logo
+7d91b0e	TiniestHijack	Sun Oct 20 17:13:47 2019	seeded data tables
+8cbeea8	Jonasvdham	Sun Oct 20 17:00:14 2019	made url relative
+207011d	Jonasvdham	Sun Oct 20 16:45:21 2019	requirements added
+ce220b2	Jonasvdham	Sun Oct 20 16:34:50 2019	removed comments, added text
+1b2bb2a	TiniestHijack	Sun Oct 20 15:33:22 2019	done merging
+2017f27	TiniestHijack	Sun Oct 20 15:08:06 2019	trying to merge part 2
+64541aa	TiniestHijack	Sun Oct 20 14:46:43 2019	solved merge conflicts part 1
+863dff0	TiniestHijack	Sun Oct 20 14:36:08 2019	commit before branch merge
+3c6bcaf	TiniestHijack	Sun Oct 20 14:19:00 2019	updated gemfile for heroku
+fb22ca3	TiniestHijack	Sun Oct 20 13:42:01 2019	updated readme and added git log, not yet finished
 88a44da	TiniestHijack	Sun Oct 20 12:00:25 2019	added line chart and table for co2 emissions
+2f0e4f9	Jonasvdham	Sat Oct 19 20:50:26 2019	added json info to individual country pages
+ffc93b5	Jonasvdham	Sat Oct 19 18:04:41 2019	Re-added search bar and added multiple metrics to map
 d616a7e	TiniestHijack	Fri Oct 18 19:52:12 2019	add search
 8a1ed5c	TiniestHijack	Fri Oct 18 19:50:01 2019	added search
 d1b16d2	TiniestHijack	Fri Oct 18 19:49:10 2019	added search bar
 cbaa420	Jonasvdham	Fri Oct 18 15:07:47 2019	Changed homepage to continents, autorefresh on map page works now
 3f16e43	Jonasvdham	Fri Oct 18 12:32:13 2019	Added regional buttons
 432d435	TiniestHijack	Thu Oct 17 19:37:23 2019	added countries that were mising
+c3561c6	TiniestHijack	Thu Oct 17 17:24:12 2019	what
 ed9fca9	Jonasvdham	Thu Oct 17 13:14:21 2019	Json parsing works
 07a7c4e	Jonasvdham	Tue Oct 15 21:57:00 2019	json parsing working on serverside, still buggy
 192acf3	TiniestHijack	Tue Oct 15 17:44:08 2019	added continents map
