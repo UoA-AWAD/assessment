@@ -42,7 +42,7 @@ namespace :continents do
       continent_id: continent.id,
       year: row[1].to_i,
       pollution: row[2].to_f,
-    )
+      )
     end
   end
 end
