@@ -22,4 +22,7 @@ Access the application using:http://localhost:3000
 
 # Design and Development
 
+# Presentation
 
+Slides for the project presentation can be found here:
+https://docs.google.com/presentation/d/13R-wGQQVTlFqPaldFGjbvAbjq6Dq3Jg8qvLAVnKnsrM/edit?usp=sharing
