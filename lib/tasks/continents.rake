@@ -33,7 +33,7 @@ namespace :continents do
       puts row.inspect #just so that we know the file's being read
 
       country_temp = row[0].to_s
-      continent_new = Continent.where(["continents.Country = ?", country_temp])
+      continent_new = Continent.select([|x| x[:Country] == country_temp])
       continent_new = continent_new[0]
 
       #create new model instances with the data
