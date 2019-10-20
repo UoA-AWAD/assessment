@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-
+<div id="wrapper">
+<div style="float: left; width: 50%">
 <p>
   <strong>Continent:</strong>
   <%= @continent.country.continent %>
@@ -69,10 +70,28 @@
   <strong>Commercial hydroelectric consumption:</strong>
   <%= @continent.Commercial_hydroelectric_consumption %>
 </p>
-
+</div>
+<button type="button" onClick="putJson()"> Request data in JSON format </button>
+<div id="json" style="flaot: left; display: none">
+    {"Continent": "<%= @continent.Continent %>", "Country": "<%= @continent.Country %>", 
+    "Population": <%= @continent.Population %>, "Population_density": <%= @continent.Population_density %>,
+    "Urban_population": <%= @continent.Urban_population %>, "Urban_population_coastal": <%= @continent.Urban_population_coastal %>,
+    "Gdp_per_capita": <%= @continent.GDP_per_capita %>, "Land_area": <%= @continent.Land_area %>, "Cropland_area": <%= @continent.Cropland_area %>,
+    "Pasture_area": <%= @continent.Pasture_area %>, "Water_per_capita": <%= @continent.Water_per_capita %>,
+    "Commercial_energy_consumption": <%= @continent.Commercial_energy_consumption %>, "Traditional_fuel_consumption": <%= @continent.Traditional_fuel_consumption %>,
+    "Commercial_hydroelectric_consumption": <%= @continent.Commercial_hydroelectric_consumption %>}
+</div>
+</div>
+<br>
 <p>
   <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=3&size=400x300&markers=size:small%7Ccolor:red%7C=#{@continent.Country}&key=AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M", alt: "Map" %>
 </p>
-
-<%= link_to 'Edit', edit_continent_path(@continent) %> |
+<script>
+  
+  function putJson(){
+    console.log("TEST")
+    document.getElementById("json").style.display="block"
+  }
+</script>
+<br>
 <%= link_to 'Back', continents_path %>

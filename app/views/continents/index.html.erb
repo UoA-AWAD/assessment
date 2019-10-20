@@ -1,8 +1,14 @@
-<p>This website can be used to analyse different aspects of energy use across the world!</p>
+<%=link_to 'World Map', home_index_path%>
+
+<%= form_tag(continents_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] %>
+  <%= submit_tag'Search' %>
+<% end %>
 
 <table>
   <thead>
     <tr>
+      <th>Continent</th>
       <th>Country</th>
       <th>Population</th>
       <th>Population density</th>
@@ -23,6 +29,7 @@
   <tbody>
     <% @continents.each do |continent| %>
       <tr>
+        <td><%= continent.Continent %></td>
         <td><%= continent.Country %></td>
         <td><%= continent.Population %></td>
         <td><%= continent.Population_density %></td>
@@ -37,13 +44,11 @@
         <td><%= continent.Traditional_fuel_consumption %></td>
         <td><%= continent.Commercial_hydroelectric_consumption %></td>
         <td><%= link_to 'Show', continent %></td>
+        <!--
         <td><%= link_to 'Edit', edit_continent_path(continent) %></td>
-        <td><%= link_to 'Destroy', continent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', continent, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Continent', new_continent_path %>
+<!--<%= link_to 'New Continent', new_continent_path %>-->
