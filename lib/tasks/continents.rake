@@ -5,14 +5,15 @@ namespace :continents do
 
     #drop the old table data before importing the new stuff
     Continent.destroy_all
+    Emission.destroy_all
     
-    CSV.foreach("lib/assets/Socio-Economic_Baseline_Data.csv", :headers =>false) do |row |
+    CSV.foreach("lib/assets/Socio-Economic_Baseline_Data.csv", :headers =>false) do |row|
       puts row.inspect #just so that we know the file's being read
 
       #create new model instances with the data
       Continent.create!(
       Continent: row[0],
-      Country: row[1],
+      Country: row[1].to_s,
       Population: row[2].to_i,
       Population_density: row[3].to_i,
       Urban_population: row[5].to_i,
@@ -25,6 +26,22 @@ namespace :continents do
       Commercial_energy_consumption: row[31].to_i,
       Traditional_fuel_consumption: row[32].to_i,
       Commercial_hydroelectric_consumption: row[33].to_i
+    )
+    end
+
+    CSV.foreach("lib/assets/CAIT Country CO2 Emissions.csv", :headers =>false) do |row|
+      puts row.inspect #just so that we know the file's being read
+
+      country_temp = row[0].to_s
+      continent = Continent.where(["Country = ?", country_temp])
+      continent = continent[0]
+      puts continent
+
+      #create new model instances with the data
+      Emission.create!(
+      continent_id: continent.id,
+      year: row[1].to_i,
+      pollution: row[2].to_f,
     )
     end
   end

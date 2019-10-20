@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :emissions
   resources :continents
   get 'continents.json' => 'home#index'
   get 'continents/index' => 'continents#index'

@@ -1,0 +1,32 @@
+<%= form_with(model: emission, local: true) do |form| %>
+  <% if emission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(emission.errors.count, "error") %> prohibited this emission from being saved:</h2>
+
+      <ul>
+      <% emission.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :continent_id %>
+    <%= form.text_field :continent_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pollution %>
+    <%= form.text_field :pollution %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

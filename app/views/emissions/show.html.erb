@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Continent:</strong>
+  <%= @emission.continent.Country %>
+</p> 
+
+<%= link_to 'Back', emissions_path %><br/><br/>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>CO2 Emissions</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @emissions.each do |emission| %>
+      <tr>
+        <td><%= emission.year %></td>
+        <td><%= emission.pollution %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<!--<%= link_to 'Edit', edit_emission_path(@emission) %> |-->

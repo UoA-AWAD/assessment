@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Emissions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>CO2 in 2012</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @emissions[29484..29667].each do |emission| %>
+      <tr>
+        <td><%= emission.continent.Country %></td>
+        <td><%= emission.pollution %></td>
+        <td><%= link_to 'Show', emission %></td>
+        <!--<td><%= link_to 'Edit', edit_emission_path(emission) %></td>
+        <td><%= link_to 'Destroy', emission, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<%= link_to 'New Emission', new_emission_path %>-->

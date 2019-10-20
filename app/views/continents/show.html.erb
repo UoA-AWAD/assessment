@@ -74,5 +74,34 @@
   <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=3&size=400x300&markers=size:small%7Ccolor:red%7C=#{@continent.Country}&key=AIzaSyDIQFAz4aYXsAg6IMs6l2Fj6aiXv_3uT2M", alt: "Map" %>
 </p>
 
+<div id="container" style="width:100%; height:400px;"></div>
+<script type="text/javascript">
+  $(function() {
+    var myChart = Highcharts.chart('container', {
+      chart: {
+        type: 'line'
+      },
+      title: {
+        text: 'Emissions of <%= @continent.Country %> (1850 - 2012)'
+      },
+      xAxis: {
+        //<% year_array = []%>
+        //<% pollution_array = [] %>
+        //<% @emission.each do |emission| %>
+          //<% year_array<<emission.year%>
+          //<% pollution_array<<emission.pollution%>
+        //<% end %>
+        categories: <%=raw @year_array %>
+      },
+      yAxis: {
+        title: {
+          text: 'CO2 Emissions'
+        }
+      },
+      series: [{name:'CO2', data: <%=raw @pollution_array %>}]
+    });
+  });
+  </script>
+
 <!--<%= link_to 'Edit', edit_continent_path(@continent) %> |-->
-<%= link_to 'Back', continents_path %>
+<%= link_to 'Back', continents_path %> | <%= link_to 'Country CO2 Emissions Table', @emission[0]%>

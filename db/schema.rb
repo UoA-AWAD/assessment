@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_10_130117) do
+ActiveRecord::Schema.define(version: 2019_10_19_235538) do
 
   create_table "continents", force: :cascade do |t|
     t.string "Continent"
@@ -29,6 +29,15 @@ ActiveRecord::Schema.define(version: 2019_10_10_130117) do
     t.integer "Commercial_hydroelectric_consumption"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "emissions", force: :cascade do |t|
+    t.integer "continent_id"
+    t.integer "year"
+    t.float "pollution"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["continent_id"], name: "index_emissions_on_continent_id"
   end
 
 end

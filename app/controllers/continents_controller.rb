@@ -15,6 +15,13 @@ class ContinentsController < ApplicationController
   # GET /continents/1
   # GET /continents/1.json
   def show
+    @pollution_array = []
+    @year_array = []
+    @emission = Emission.where("continent_id = ?", @continent.id)
+    @emission.each do |emission|
+      @pollution_array<<emission.pollution
+      @year_array<<emission.year
+    end
   end
 
   # GET /continents/new
