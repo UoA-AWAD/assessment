@@ -12,12 +12,8 @@ namespace :continents do
 
       #create new model instances with the data
       Continent.create!(
-<<<<<<< HEAD
-      Country: row[1],
-=======
       Continent: row[0],
       Country: row[1].to_s,
->>>>>>> ciaLinkTable
       Population: row[2].to_i,
       Population_density: row[3].to_i,
       Urban_population: row[5].to_i,
