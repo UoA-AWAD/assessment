@@ -1,5 +1,10 @@
-<%=link_to 'World Map', home_index_path%>
-
+<p> Welcome to the World Energy Analysis website.
+On these pages you will find interesting data concerning global population, use of land, 
+consumption of energy and emissions. Queries can be done in the search bar below to search for individual countries,
+visiting the individual country pages shows more information on them and allows the user to request JSON data.
+Click the link below to go to an interactive world map which allows for more intuitive interpretation of the data.</p>
+<%=link_to 'World Map', home_index_path%> 
+<br><br>
 <%= form_tag(continents_path, method: :get) do %>
   <%= text_field_tag :term, params[:term] %>
   <%= submit_tag 'Search' %>
@@ -44,11 +49,7 @@
         <td><%= continent.Traditional_fuel_consumption %></td>
         <td><%= continent.Commercial_hydroelectric_consumption %></td>
         <td><%= link_to 'Show', continent %></td>
-        <!--
-        <td><%= link_to 'Edit', edit_continent_path(continent) %></td>
-        <td><%= link_to 'Destroy', continent, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
       </tr>
     <% end %>
   </tbody>
 </table>
-<!--<%= link_to 'New Continent', new_continent_path %>-->

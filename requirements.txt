@@ -1,0 +1,35 @@
+Gem rails-5.2.3
+  actioncable (= 5.2.3)
+  actionmailer (= 5.2.3)
+  actionpack (= 5.2.3)
+  actionview (= 5.2.3)
+  activejob (= 5.2.3)
+  activemodel (= 5.2.3)
+  activerecord (= 5.2.3)
+  activestorage (= 5.2.3)
+  activesupport (= 5.2.3)
+  bundler (>= 1.3.0)
+  railties (= 5.2.3)
+  sprockets-rails (>= 2.0.0)
+
+Gem rails-dom-testing-2.0.3
+  activesupport (>= 4.2.0)
+  bundler (>= 1.3, development)
+  minitest (>= 0, development)
+  nokogiri (>= 1.6)
+  rake (>= 0, development)
+
+Gem rails-html-sanitizer-1.2.0
+  bundler (>= 1.3, development)
+  loofah (~> 2.2, >= 2.2.2)
+  minitest (>= 0, development)
+  rails-dom-testing (>= 0, development)
+  rake (>= 0, development)
+
+Gem rails-html-sanitizer-1.3.0
+  bundler (>= 1.3, development)
+  loofah (~> 2.3)
+  minitest (>= 0, development)
+  rails-dom-testing (>= 0, development)
+  rake (>= 0, development)
+
